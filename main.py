@@ -33,7 +33,13 @@ class Window_1(QMainWindow):
             self.lineEdit_2.setText("Категория введена")
 
         else:
-            self.lineEdit_2.setText("Введите пожалуйсто категорию")
+            self.lineEdit_2.setText("Введите пожалуйста категорию")
+
+        if self.lineEdit_3.text() and self.lineEdit_4.text() and self.lineEdit_5.text() and self.lineEdit_6.text():
+            self.lineEdit_7.setText("Категория добавлена в базу данных")
+
+        else:
+            self.lineEdit_7.setText("Введите пожалуйста категорию")
 
 
 
